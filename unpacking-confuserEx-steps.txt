@@ -1,0 +1,37 @@
+[Steps for Unpacking ConfuserEx 1.0]
+
+*May not apply if the software was protected with a customized version of ConsuferEx.
+
+[Steps 1 to 3, use dnSpy]
+1. Set bpx on gchandle.free, and dump koi.exe, 
+2. Set bpx on ctor's 2nd module, and dump koi.exe, 
+3. NOP static<module> using by using Edit IL, then remove crackme and save
+
+[From Step 4 onwards, use UnconfuserEx Tools]
+4. ConfuserExConstantDecryptor, then exit
+5. ConfuserExCallFixer, then exit
+6. ConfuserExDupPopPatcher, then exit
+7. ConfuserExFixer, then exit
+8. ConfuserExSwitchKiller, then exit
+
+[Step 9, use ConfuserExMethodsDecryptor in the ConfuserEX Unpack folder]
+9. ConfuserExMethodsDecryptor, then exit
+
+[Step 10, use de4dot command line tool]
+10. de4dot, then close command prompt
+
+[Steps 11 to 13 use dnSpy]
+11. Edit Module Entry Point by setting it to Class5, method0 (continue with Step 12 below)
+12. 4 NOP's on static<module> using Edit IL, then remove crackme and save
+
+The test it. If it fails to start. Debug with dnSpy. If you get error:
+"missing manifest resource exception", then do Step 13 below. The error message will
+also tell you that some Form is missing, eg, "Make sure Form1.resource is correctly 
+embedded".
+
+[Step 13, use dnSpy]
+13. Open Resources folder and rename the gibberish text.resource to Form1.resource
+    or whatever the name of the missing Form mentioned in the error message. Then,
+    remove crackme and save.
+
+Test.

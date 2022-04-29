@@ -1,0 +1,19 @@
+## [ Tools ]
+1- Android Stdio
+2- LDplayer
+3- apktool
+4- adb
+5- Bytecode
+6- jd-gui
+7- jadx-gui
+8- dex2jar
+9- Visual Stdio code (apk Lab)
+------------------------------------------------------
+[ frida ]
+1- LDplayer { adb - apktool - Android Stdio }
+2- Visual Stdio code { js }
+3- frida-server 
+4- objection { python = pip }
+5- dex2jar
+6- jd-gui
+

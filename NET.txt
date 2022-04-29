@@ -1,0 +1,40 @@
+[Tools Cracking .NET Software Protection ]
+
+1-confuser
+2-confuserEx
+3-de4dot --> (add path)
+
+[ ConfuserEx ]
+
+1- Packed --> { (open .ccrot module) break point in .free (save koi modules)} 
+2- anti Temper --> { (open .ccrot module) break point in frist moduels and jmp scend moduels and save modules open .ccrot module (static module) Edit IL Instructions and nop Instructions}
+3- constants --> { Use ConfuserExConstantDecryptor Tool }
+4- ctrl flow --> { Use ConfuserExSwitchKiller Tool } حماية تشويش
+5- anti dump --> { (open .ccrot module) break point in frist moduels and jmp scend moduels and save modules}
+6- ref proxy --> { use ConfuserExCallFixer Tool }
+7- resources --> { (A) (Resources Empty) (open .ccrot module) break point in frist moduels and jmp scend moduels and save modules
+		   (B) open new moduels and right click (Raw save namefile.resources
+		   (C) on old projct right click on (Resources) Create file Resources select new save
+		   (D) open .ccrot module (static module) Edit IL Instructions and nop Instructions }
+8- rename --> { Use de4dot Tool and Rename (Resources to From1.resources) }
+
+==============================================================================================
+
+[ ConfuserEx Maximum ]
+
+1- { (open .ccrot module) break point in .free (save koi modules)} --> Packed  
+2- { (open .ccrot module) break point in frist moduels and jmp scend moduels and save modules koi }
+3- { (open .ccrot module) right click frist static moduels (Edit IL Instructions) and nop frist moduels }
+4- { use ConfuserExConstantDecryptor Tool }
+5- { use ConfuserExCallFixer Tool }
+6- { use ConfuserExDupPopPatcher Tool }
+7- { use ConfuserExFixer Tool }
+8- { use ConfuserExSwitchKiller Tool } 
+9- { use ConfuserExMethodsDecryptor Tool } 
+10- { use de4dot }
+11- { (fix Entry point) right click on project select Edit Module and Managed select Entry point }
+12- { (open .ccrot module) right click frist static moduels (Edit IL Instructions) and nop ALL moduels }
+13- { run code and see msg error (resources--> see name)
+
+
+
